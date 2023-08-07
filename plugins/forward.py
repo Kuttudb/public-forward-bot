@@ -124,7 +124,7 @@ async def forward(bot, message):
                     'methord': "bot",
                     'use': "forward"
                     })
-                MessageCount += 5
+                MessageCount += 1
                 try:
                     datetime_ist = datetime.now(IST)
                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
