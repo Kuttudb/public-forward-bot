@@ -56,10 +56,10 @@ async def forward(bot, message):
         return
     m=await bot.send_message(chat_id=OWNER, text="Started Forwarding")
     global MessageCount
-    mcount = random.randint(1000, 1530)
-    acount = random.randint(500, 600)
-    bcount = random.randint(150, 200)
-    ccount = random.randint(20, 30)
+    mcount = random.randint(1, 1)
+    acount = random.randint(1, 1)
+    bcount = random.randint(1, 1)
+    ccount = random.randint(1, 1)
     while await Data.count_documents() != 0:
         data = await get_search_results()
         for msg in data:
@@ -241,7 +241,7 @@ async def forward(bot, message):
                                 acount -= 1
                                 bcount -= 1
                                 MessageCount += 1
-                                mainsleep=random.randint(2, 4)
+                                mainsleep=random.randint(1, 2)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -264,7 +264,7 @@ async def forward(bot, message):
                                     status.remove(1)
                                 except:
                                     pass
-                                csleep=random.randint(2, 5)
+                                csleep=random.randint(2, 1)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -275,7 +275,7 @@ async def forward(bot, message):
                                     pass
                                     
                                 await asyncio.sleep(csleep)
-                                ccount = random.randint(2, 3)
+                                ccount = random.randint(2, 1)
                                 print(f"Starting after {csleep/6} minutes")
                                 await m.edit(f"Starting after {csleep}")
                         else:
@@ -287,7 +287,7 @@ async def forward(bot, message):
                                 status.remove(1)
                             except:
                                 pass
-                            bsl=random.randint(100, 120)
+                            bsl=random.randint(1, 2)
                             try:
                                 datetime_ist = datetime.now(IST)
                                 ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -297,7 +297,7 @@ async def forward(bot, message):
                                 print(e)
                                 pass
                             await asyncio.sleep(bsl)
-                            bcount = random.randint(150, 200)
+                            bcount = random.randint(1, 2)
                             print(bcount)
                             print(f"Starting after {bsl}")
                             await m.edit(f"Starting after {bsl}")
@@ -310,7 +310,7 @@ async def forward(bot, message):
                             status.remove(1)
                         except:
                             pass
-                        asl=random.randint(150, 200)
+                        asl=random.randint(1, 2)
                         try:
                             datetime_ist = datetime.now(IST)
                             ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -320,7 +320,7 @@ async def forward(bot, message):
                             print(e)
                             pass
                         await asyncio.sleep(asl)
-                        acount = random.randint(500, 600)
+                        acount = random.randint(1, 2)
                         print(f"Starting after {asl}")
                         await m.edit(f"Starting after {asl}")
                 else:
@@ -332,7 +332,7 @@ async def forward(bot, message):
                         status.remove(1)
                     except:
                         pass
-                    msl=random.randint(200, 300)
+                    msl=random.randint(2, 1)
                     try:
                         datetime_ist = datetime.now(IST)
                         ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -343,7 +343,7 @@ async def forward(bot, message):
                         print(e)
                         pass
                     await asyncio.sleep(msl)
-                    mcount = random.randint(1000, 1500)
+                    mcount = random.randint(1, 2)
                     print(f"Starting after {msl}")
                     await m.edit(f"Starting after {msl}")
 
