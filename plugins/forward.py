@@ -264,7 +264,7 @@ async def forward(bot, message):
                                     status.remove(1)
                                 except:
                                     pass
-                                csleep=random.randint(20, 50)
+                                csleep=random.randint(2, 5)
                                 try:
                                     datetime_ist = datetime.now(IST)
                                     ISTIME = datetime_ist.strftime("%I:%M:%S %p - %d %B %Y")
@@ -275,8 +275,8 @@ async def forward(bot, message):
                                     pass
                                     
                                 await asyncio.sleep(csleep)
-                                ccount = random.randint(25, 30)
-                                print(f"Starting after {csleep/60} minutes")
+                                ccount = random.randint(2, 3)
+                                print(f"Starting after {csleep/6} minutes")
                                 await m.edit(f"Starting after {csleep}")
                         else:
                             try:
